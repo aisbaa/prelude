@@ -95,8 +95,11 @@
                                             (abbreviate-file-name (buffer-file-name))
                                           "%b"))))
 
+(defvar prelude-personal-themes-dir (concat prelude-dir "themes/"))
+(add-to-list 'custom-theme-load-path prelude-personal-themes-dir)
+
 ;; use zenburn as the default theme
-(load-theme 'zenburn t)
+(load-theme 'aisbaa-zenburn t)
 
 (provide 'prelude-ui)
 ;;; prelude-ui.el ends here
