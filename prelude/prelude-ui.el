@@ -78,6 +78,7 @@
 (line-number-mode t)
 (column-number-mode t)
 (size-indication-mode t)
+(global-linum-mode t)
 
 ;; make the fringe (gutter) smaller
 ;; the argument is a width in pixels (the default is 8)
