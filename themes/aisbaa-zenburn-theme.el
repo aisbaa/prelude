@@ -531,7 +531,7 @@
    `(whitespace-space-before-tab ((,class (:background ,aisbaa-zenburn-orange :foreground ,aisbaa-zenburn-orange))))
    `(whitespace-indentation ((,class (:background ,aisbaa-zenburn-bg+1 :foreground ,aisbaa-zenburn-red))))
    `(whitespace-empty ((,class (:background ,aisbaa-zenburn-yellow :foreground ,aisbaa-zenburn-red))))
-   `(whitespace-space-after-tab ((,class (:background ,aisbaa-zenburn-yellow :foreground ,aisbaa-zenburn-red))))
+   `(whitespace-space-after-tab ((,class (:background ,aisbaa-zenburn-bg+1 :foreground ,aisbaa-zenburn-red))))
 
    ;; wanderlust
    `(wl-highlight-folder-few-face ((,class (:foreground ,aisbaa-zenburn-red-2))))
