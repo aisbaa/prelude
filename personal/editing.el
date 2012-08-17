@@ -10,3 +10,5 @@
                          space-mark
                          tab-mark
                          newline-mark))
+
+(setq-default indent-tabs-mode nil)   ;; at work I have to indent with tabs
