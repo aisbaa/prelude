@@ -5,3 +5,7 @@
   (insert (format-time-string "%Y-%m-%d %R")))
 
 (global-set-key (kbd "C-x t ") 'aisbaa-insert-time)
+
+;;; evil numbers
+(global-set-key (kbd "C-+ ") 'evil-numbers/inc-at-pt)
+(global-set-key (kbd "C-- ") 'evil-numbers/dec-at-pt)
