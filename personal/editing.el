@@ -4,7 +4,6 @@
                          spaces
                          trailing
                          lines
-                         space-before-tab
                          newline
                          empty
                          space-mark
@@ -12,3 +11,5 @@
                          newline-mark))
 
 (setq-default indent-tabs-mode nil)   ;; at work I have to indent with tabs
+(setq-default c-tab-always-indent t)
+(setq-default c-syntactic-indentation t)
