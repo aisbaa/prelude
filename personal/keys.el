@@ -9,3 +9,7 @@
 ;;; evil numbers
 (global-set-key (kbd "C-+ ") 'evil-numbers/inc-at-pt)
 (global-set-key (kbd "C-- ") 'evil-numbers/dec-at-pt)
+
+;;; redo+
+(require 'redo+)
+(global-set-key (kbd "M-_") 'redo)
