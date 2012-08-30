@@ -13,3 +13,6 @@
 ;;; redo+
 (require 'redo+)
 (global-set-key (kbd "M-_") 'redo)
+
+;;; recompile
+(global-set-key (kbd "C-c C-r") 'recompile)
