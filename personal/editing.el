@@ -42,6 +42,9 @@
             ;; case
             (c-set-offset 'statement-case-intro tab-width)
 
+            ;; continue after \
+            (c-set-offset 'statement-cont tab-width)
+
             ;; start of comment
             (c-set-offset 'comment-intro 0)
 
