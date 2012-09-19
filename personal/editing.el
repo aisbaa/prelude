@@ -10,14 +10,21 @@
                          tab-mark
                          newline-mark))
 
-(setq-default indent-tabs-mode nil)   ;; at work I have to indent with tabs
-(setq-default c-tab-always-indent t)
-(setq-default c-syntactic-indentation t)
-
+(setq-default indent-tabs-mode nil)
 
 ;;; c-mode
-(add-hook 'c-mode-common-hook
+(add-hook 'c-mode-hook
           (lambda ()
+            ;; setting offset to match tab width
+            (setq c-basic-offset tab-width)
+
+            ;; turns on semantic indentation
+            (setq c-syntactic-indentation t)
+
+            ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+            ;; semantic indentation settings ;;
+            ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
             ;; sets one level indentation for function calls that has to many
             ;; arguments to fit it all in one line
             (c-set-offset 'arglist-cont-nonempty tab-width)
@@ -53,6 +60,4 @@
 
             ;; inside extern "C" { }
             (c-set-offset 'inextern-lang 0)
-
-            ;; setting offset to match tab width
-            (setq c-basic-offset tab-width)))
+            ))
