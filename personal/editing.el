@@ -60,4 +60,9 @@
 
             ;; inside extern "C" { }
             (c-set-offset 'inextern-lang 0)
-            ))
+
+            ;; adds quick symbol find solution
+            (require 'ascope)
+
+            (local-set-key (kbd "C-s C-d") 'ascope-find-global-definition))
+          )
