@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Neurotechnology logger
+# key: logger
+# --
+logger((_("ERROR: ${1}")));
