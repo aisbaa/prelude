@@ -23,18 +23,3 @@
 
 ;;; recompile
 (global-set-key (kbd "C-c C-r") 'recompile)
-
-
-;;; evaluate Emacs lisp and replace it with result
-(defun fc-eval-and-replace ()
-  "Replace the preceding sexp with its value, f.e. (+ 1 1 1)
-would be replaces with 3."
-  (interactive)
-  (backward-kill-sexp)
-  (condition-case nil
-      (prin1 (eval (read (current-kill 0)))
-             (current-buffer))
-    (error (message "Invalid expression")
-           (insert (current-kill 0)))))
-
-(global-set-key (kbd "C-x e") 'fc-eval-and-replace)
