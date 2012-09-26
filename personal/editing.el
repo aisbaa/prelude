@@ -12,6 +12,8 @@
 
 (setq-default indent-tabs-mode nil)
 
+
+
 ;;; c-mode
 (add-hook 'c-mode-hook
           (lambda ()
@@ -20,6 +22,9 @@
 
             ;; turns on semantic indentation
             (setq c-syntactic-indentation t)
+
+            ;; sets column limit to 78th character
+            (set-fill-column 78)
 
             ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
             ;; semantic indentation settings ;;
