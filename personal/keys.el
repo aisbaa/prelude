@@ -23,3 +23,7 @@
 
 ;;; recompile
 (global-set-key (kbd "C-c C-r") 'recompile)
+
+
+;;; replace string functionality
+(global-set-key (kbd "C-R") 'replace-string)
