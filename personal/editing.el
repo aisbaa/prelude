@@ -69,5 +69,8 @@
             ;; adds quick symbol find solution
             (require 'ascope)
 
-            (local-set-key (kbd "C-c C-s") 'ascope-find-global-definition))
-          )
+            (local-set-key (kbd "C-c C-s") 'ascope-find-global-definition)
+
+            ;; recompile on save
+            (compile-on-save-mode)
+            ))
