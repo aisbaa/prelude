@@ -73,4 +73,5 @@
 
             ;; recompile on save
             (compile-on-save-mode)
+            (setq display-buffer-reuse-frames t)
             ))
