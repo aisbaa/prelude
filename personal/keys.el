@@ -27,3 +27,8 @@
 
 ;;; replace string functionality
 (global-set-key (kbd "C-R") 'replace-string)
+
+
+;;; revive
+
+(require 'revive)

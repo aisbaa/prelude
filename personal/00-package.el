@@ -3,6 +3,7 @@
                                  ascope
                                  evil-numbers
                                  redo+
+                                 revive
                                  sr-speedbar
                                  ) prelude-packages))
 
