@@ -5,6 +5,7 @@
                                  redo+
                                  revive
                                  sr-speedbar
+                                 window-layout
                                  ) prelude-packages))
 
 
