@@ -39,3 +39,7 @@
                 lisp-interaction-mode-hook))
   (add-hook hook (lambda ()
                    (linum-mode t))))
+
+
+;;; compilation
+(setq compilation-scroll-output t)
