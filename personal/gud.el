@@ -1,7 +1,21 @@
+;;; makes gdb look like I want
+
 (require 'window-layout)
 
 (defun aisbaa-gdb-layout ()
-  "Creates gdb window layout I prefer."
+  "Creates gdb window layout I prefer. Exactly like this:
+
+|-----+--------|
+|     | locals |
+| gud +--------|
+|     | stack  |
+|-----+--------|
+| io           |
+|--------------|
+| breakpoints  |
+|------+-------|
+
+"
   (wlf:layout
    '(- (:left-size-ratio 0.6)
        (| (:left-size-ratio 0.5)
@@ -18,3 +32,10 @@
      (:name io :buffer "*input/output of *")
      (:name breakpoints :buffer "*breakpoints of *")
      )))
+
+(add-hook 'gdb-mode-hook (lambda ()
+                           (sr-speedbar-close)
+                           (delete-other-windows)
+                           (gdb-display-locals-buffer)
+                           (gdb-display-stack-buffer)
+                           (aisbaa-gdb-layout)))
