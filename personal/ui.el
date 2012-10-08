@@ -17,7 +17,7 @@
 (require 'sr-speedbar)
 
 (custom-set-variables
-  '(speedbar-show-unknown-files t))
+ '(speedbar-show-unknown-files t))
 
 (global-set-key (kbd "C-c C-t") 'sr-speedbar-toggle)
 
@@ -43,3 +43,22 @@
 
 ;;; compilation
 (setq compilation-scroll-output t)
+
+(defun aisbaa-compilation-layout ()
+  "Splits windows for compilation and log monitoring:
+|--------------------|
+| log file           |
+|--------------------|
+| compilation buffer |
+|--------------------|
+"
+  ;; (delete-other-windows)
+  (wlf:layout
+   '(- (:upper-size-ratio 0.2)
+       log-file
+       compilation)
+   '((:name log-file :buffer "*scratch*")
+     (:name compilation :buffer "*compilation*")))
+  "compilation layout")
+
+(global-set-key (kbd "C-x c 1") 'aisbaa-compilation-layout)
