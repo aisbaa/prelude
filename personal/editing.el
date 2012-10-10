@@ -73,5 +73,14 @@
 
             ;; recompile on save
             (compile-on-save-mode)
+
             (setq display-buffer-reuse-frames t)
+            ))
+
+
+;;; makefile-mode
+(add-hook 'makefile-mode-hook
+          (lambda ()
+            ;; recompile on save
+            (compile-on-save-mode)
             ))
