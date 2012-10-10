@@ -1,6 +1,7 @@
 ;; My packages
 (setq prelude-packages (append '(
                                  ascope
+                                 diminish
                                  evil-numbers
                                  redo+
                                  revive

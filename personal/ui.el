@@ -1,12 +1,5 @@
 ;;; fonts
-(set-face-attribute 'default nil :height 90)
-
-
-;;; theme
-;; (defvar prelude-personal-themes-dir (concat prelude-dir "themes/"))
-;; (add-to-list 'custom-theme-load-path prelude-personal-themes-dir)
-
-;; (load-theme 'aisbaa-zenburn t)
+(set-face-attribute 'default nil :height 80)
 
 
 ;;; line numbers
@@ -62,3 +55,17 @@
   "compilation layout")
 
 (global-set-key (kbd "C-x c 1") 'aisbaa-compilation-layout)
+
+
+;;; diminish mode line
+(require 'diminish)
+
+(diminish 'abbrev-mode "ab")
+(diminish 'auto-complete-mode " α")
+(diminish 'eldoc-mode " eldoc")
+(diminish 'flyspell-mode " fly")
+(diminish 'guru-mode " g")
+(diminish 'paredit-mode " π")
+(diminish 'projectile-mode " prjtl")
+(diminish 'volatile-highlights-mode "")
+(diminish 'yas-minor-mode " γ")
