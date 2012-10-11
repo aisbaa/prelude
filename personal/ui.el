@@ -16,7 +16,7 @@
 
 
 ;;; c-mode
-(add-hook 'c-mode-hook
+(add-hook 'c-mode-common-hook
           (lambda ()
             (linum-mode t)
             (semantic-mode t)

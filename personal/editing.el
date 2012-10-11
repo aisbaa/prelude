@@ -15,7 +15,7 @@
 
 
 ;;; c-mode
-(add-hook 'c-mode-hook
+(add-hook 'c-mode-common-hook
           (lambda ()
             ;; setting offset to match tab width
             (setq c-basic-offset tab-width)
