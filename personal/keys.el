@@ -32,3 +32,11 @@
 ;;; revive
 
 (require 'revive)
+
+
+;;; sort lines
+(global-set-key (kbd "C-c S") 'sort-lines)
+
+
+;;; frames
+(global-set-key (kbd "C-x o") 'other-frame)
