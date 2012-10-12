@@ -61,6 +61,7 @@
 (require 'diminish)
 
 (diminish 'abbrev-mode "ab")
+(diminish 'compilation-in-progress " ⌛")
 (diminish 'compile-on-save-mode " ∞")
 (diminish 'eldoc-mode " eldoc")
 (diminish 'flyspell-mode " ✈")
@@ -72,4 +73,3 @@
 (diminish 'volatile-highlights-mode "")
 (diminish 'whitespace-mode " ●")
 (diminish 'yas-minor-mode " γ")
-(diminish 'compilation-in-progress " ☢")
