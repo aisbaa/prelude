@@ -77,6 +77,12 @@
             (setq display-buffer-reuse-frames t)
             ))
 
+(add-hook 'c++-mode-hook (lambda ()
+                         (cwarn-mode)))
+
+
+(add-hook 'c-mode-hook (lambda ()
+                         (cwarn-mode)))
 
 ;;; makefile-mode
 (add-hook 'makefile-mode-hook
