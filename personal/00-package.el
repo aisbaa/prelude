@@ -1,6 +1,5 @@
 ;; My packages
-(setq prelude-packages (append '(
-                                 ascope
+(setq prelude-packages (append '(ascope
                                  diminish
                                  evil-numbers
                                  redo+
@@ -9,6 +8,10 @@
                                  window-layout
                                  ) prelude-packages))
 
+
+(setq prelude-auto-install-alist
+      (append prelude-auto-install-alist
+              '(("\\.cs\\'" csharp-mode))))
 
 ;; Install my packages
 (prelude-install-packages)
