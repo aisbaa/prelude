@@ -36,6 +36,10 @@
 
 ;;; compilation
 (setq compilation-scroll-output t)
+(add-hook 'compilation-mode-hook
+          (lambda ()
+            (setq display-buffer-reuse-frames t)))
+
 
 (defun aisbaa-compilation-layout ()
   "Splits windows for compilation and log monitoring:
