@@ -73,8 +73,6 @@
 
             ;; recompile on save
             (compile-on-save-mode)
-
-            (setq display-buffer-reuse-frames t)
             ))
 
 (add-hook 'c++-mode-hook (lambda ()

@@ -20,7 +20,7 @@
    '(- (:upper-size-ratio 0.5)
        (| (:left-size-ratio 0.5)
           gud
-          (- (:upper-size-ratio 0.5)
+          (- (:upper-size-ratio 0.75)
              locals
              stack))
        (- (:upper-size-ratio 0.5)
