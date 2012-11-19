@@ -73,7 +73,10 @@
 
             ;; recompile on save
             (compile-on-save-mode)
-            ))
+
+            ;; makes code a bit more readable
+            (glasses-mode t)))
+
 
 (add-hook 'c++-mode-hook (lambda ()
                          (cwarn-mode)))
@@ -86,5 +89,4 @@
 (add-hook 'makefile-mode-hook
           (lambda ()
             ;; recompile on save
-            (compile-on-save-mode)
-            ))
+            (compile-on-save-mode)))
