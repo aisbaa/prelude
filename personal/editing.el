@@ -72,10 +72,7 @@
             (local-set-key (kbd "C-c C-s") 'ascope-find-global-definition)
 
             ;; recompile on save
-            (compile-on-save-mode)
-
-            ;; makes code a bit more readable
-            (glasses-mode t)))
+            (compile-on-save-mode)))
 
 
 (add-hook 'c++-mode-hook (lambda ()
