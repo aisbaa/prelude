@@ -10,6 +10,15 @@
 (scroll-bar-mode -1)
 
 
+;;; window splitting advice
+(defun split-horizontally-for-temp-buffers ()
+  "Split the window horizontally for temp buffers."
+  (when (one-window-p t)
+    (split-window-horizontally)))
+
+(add-hook 'temp-buffer-setup-hook 'split-horizontally-for-temp-buffers)
+
+
 ;;; speed bar
 (require 'sr-speedbar)
 
