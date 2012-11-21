@@ -6,6 +6,10 @@
 (global-linum-mode -1)
 
 
+;;; scroll-bar
+(scroll-bar-mode -1)
+
+
 ;;; speed bar
 (require 'sr-speedbar)
 
