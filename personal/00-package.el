@@ -5,7 +5,6 @@
                                  evil-numbers
                                  redo+
                                  revive
-                                 simple-httpd
                                  sr-speedbar
                                  ssh-config-mode
                                  window-layout
