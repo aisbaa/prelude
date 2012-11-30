@@ -90,3 +90,8 @@
 (diminish 'volatile-highlights-mode "")
 (diminish 'whitespace-mode " ●")
 (diminish 'yas-minor-mode " γ")
+
+
+;;; projectile adds .svn folder to projectile project root
+(if (not (member ".svn" projectile-project-root-files))
+    (add-to-list 'projectile-project-root-files ".svn" t))
