@@ -1,4 +1,9 @@
-;; My packages
+;;; additional repositories
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
+
+
+;; packages
 (setq prelude-packages (append '(
                                  ascope
                                  diminish
@@ -6,6 +11,7 @@
                                  redo+
                                  revive
                                  sr-speedbar
+                                 simpleclip
                                  ssh-config-mode
                                  window-layout
                                  ) prelude-packages))
