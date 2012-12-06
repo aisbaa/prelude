@@ -5,6 +5,7 @@
 
 ;; packages
 (setq prelude-packages (append '(
+                                 auto-complete
                                  ascope
                                  diminish
                                  evil-numbers
