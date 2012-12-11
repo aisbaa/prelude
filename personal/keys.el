@@ -39,4 +39,8 @@
 
 
 ;;; frames
-(global-set-key (kbd "C-x o") 'other-frame)
+(global-set-key (kbd "C-x O") 'other-frame)
+
+
+;;; yas-snippet
+(global-set-key (kbd "C-<tab>") 'yas-expand)
