@@ -38,4 +38,4 @@
 
 
 ;;; yas-snippet
-(global-set-key (kbd "C-TAB") 'yas-expand)
+(global-set-key (kbd "C-<tab>") 'yas-expand)
