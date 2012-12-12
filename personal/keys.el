@@ -28,10 +28,6 @@
 ;;; replace string functionality
 (global-set-key (kbd "C-R") 'replace-string)
 
-;;; revive
-;; TODO(Aistis): uninstall this
-;; (require 'revive)
-
 
 ;;; sort lines
 (global-set-key (kbd "C-c S") 'sort-lines)

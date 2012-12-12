@@ -10,7 +10,6 @@
                                  diminish
                                  evil-numbers
                                  redo+
-                                 revive
                                  sr-speedbar
                                  simpleclip
                                  ssh-config-mode
