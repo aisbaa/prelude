@@ -6,6 +6,7 @@
 (require 'auto-complete-config)
 (require 'flyspell)
 (require 'guru-mode)
+(require 'linum-off)
 (require 'paredit)
 (require 'rainbow-mode)
 (require 'whitespace)

@@ -3,7 +3,9 @@
 
 
 ;;; line numbers
-(global-linum-mode -1)
+(global-linum-mode 1)
+
+(add-to-list 'linum-disabled-modes-list "speedbar-mode" t)
 
 
 ;;; auto-complete

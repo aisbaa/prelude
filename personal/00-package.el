@@ -5,13 +5,14 @@
 
 ;; packages
 (setq prelude-packages (append '(
-                                 auto-complete
                                  ascope
+                                 auto-complete
                                  diminish
                                  evil-numbers
+                                 linum-off
                                  redo+
-                                 sr-speedbar
                                  simpleclip
+                                 sr-speedbar
                                  ssh-config-mode
                                  window-layout
                                  ) prelude-packages))
