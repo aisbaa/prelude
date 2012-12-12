@@ -98,7 +98,7 @@
 (diminish 'compile-on-save-mode " ∞")
 (diminish 'eldoc-mode " eldoc")
 (diminish 'flyspell-mode " ✈")
-(diminish 'guru-mode " guru")
+(diminish 'guru-mode "")
 (diminish 'paredit-mode " π")
 (diminish 'prelude-mode " ♪")
 (diminish 'projectile-mode " ☄")
