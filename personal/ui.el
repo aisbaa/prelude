@@ -20,6 +20,7 @@
 (setq ac-quick-help-delay 0.8)
 
 (ac-set-trigger-key "TAB")
+(define-key ac-mode-map (kbd "M-SPC") 'auto-complete)
 
 
 ;;; scroll-bar
