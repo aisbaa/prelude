@@ -2,6 +2,7 @@
 (setq whitespace-style '(face
                          tabs
                          trailing
+                         spaces
                          lines
                          newline
                          empty
@@ -79,6 +80,13 @@
 
 (add-hook 'c-mode-hook (lambda ()
                          (cwarn-mode)))
+
+
+;;; html-mode
+(add-hook 'html-mode-hook (lambda ()
+                            (auto-complete-mode t)
+                            (whitespace-mode t)))
+
 
 ;;; makefile-mode
 (add-hook 'makefile-mode-hook

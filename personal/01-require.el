@@ -10,3 +10,4 @@
 (require 'paredit)
 (require 'rainbow-mode)
 (require 'whitespace)
+(require 'yasnippet)
