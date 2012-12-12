@@ -28,10 +28,9 @@
 ;;; replace string functionality
 (global-set-key (kbd "C-R") 'replace-string)
 
-
 ;;; revive
-
-(require 'revive)
+;; TODO(Aistis): uninstall this
+;; (require 'revive)
 
 
 ;;; sort lines
@@ -43,4 +42,4 @@
 
 
 ;;; yas-snippet
-(global-set-key (kbd "C-<tab>") 'yas-expand)
+(global-set-key (kbd "C-TAB") 'yas-expand)

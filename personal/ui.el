@@ -6,6 +6,20 @@
 (global-linum-mode -1)
 
 
+;;; auto-complete
+(ac-config-default)
+
+(global-auto-complete-mode t)
+
+(setq ac-comphist-file
+      (expand-file-name "ac-comphist.dat" prelude-savefile-dir))
+
+(setq ac-use-quick-help t)
+(setq ac-quick-help-delay 0.8)
+
+(ac-set-trigger-key "TAB")
+
+
 ;;; scroll-bar
 (scroll-bar-mode -1)
 

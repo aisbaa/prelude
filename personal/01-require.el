@@ -2,6 +2,8 @@
 ;;; diminish initialisation, since most modes are no initialised
 ;;; before diminish function is called
 
+(require 'auto-complete)
+(require 'auto-complete-config)
 (require 'flyspell)
 (require 'guru-mode)
 (require 'paredit)
