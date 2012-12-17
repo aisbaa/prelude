@@ -96,3 +96,7 @@
           (lambda ()
             ;; recompile on save
             (compile-on-save-mode)))
+
+
+;;; minor modes
+(yas-global-mode 1)
