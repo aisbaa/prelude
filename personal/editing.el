@@ -70,6 +70,9 @@
 
             (local-set-key (kbd "C-c C-s") 'ascope-find-global-definition)
 
+            ;; whitespace-mode
+            (whitespace-mode t)
+
             ;; recompile on save
             (compile-on-save-mode)))
 
