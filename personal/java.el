@@ -1,4 +1,7 @@
 ;;; Adds eclim to java mode
+
+(require 'cc-mode)
+
 (add-to-list 'load-path (expand-file-name "third_party/eclim"))
 
 (add-to-list 'java-mode-hook
