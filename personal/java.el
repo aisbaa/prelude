@@ -23,7 +23,7 @@
 
 (add-to-list 'java-mode-hook (lambda ()
                                ;; fixes semantic inner class indentation
-                               (setq inexpr-class 0)
+                               (setq inexpr-class tab-width)
 
                                ;; turns on eclim mode
                                (eclim-mode t)
