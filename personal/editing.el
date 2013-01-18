@@ -1,18 +1,3 @@
-;;; whitespace cleanup settings
-(setq whitespace-style '(face
-                         tabs
-                         trailing
-                         spaces
-                         lines
-                         newline
-                         empty
-                         tab-mark
-                         newline-mark))
-
-(setq-default indent-tabs-mode nil)
-
-
-
 ;;; c-mode
 (add-hook 'c-mode-common-hook
           (lambda ()
