@@ -1,3 +1,0 @@
-[submodule "personal/third_party/eclim"]
-	path = personal/third_party/eclim
-	url = git://github.com/senny/emacs-eclim.git
