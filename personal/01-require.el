@@ -9,5 +9,6 @@
 (require 'linum-off)
 (require 'paredit)
 (require 'rainbow-mode)
+(require 'undo-tree)
 (require 'whitespace)
 (require 'yasnippet)
