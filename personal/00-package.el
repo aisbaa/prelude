@@ -8,14 +8,15 @@
                                  ascope
                                  auto-complete
                                  diminish
+                                 emacs-eclim
                                  evil-numbers
                                  linum-off
                                  redo+
                                  simpleclip
                                  sr-speedbar
                                  ssh-config-mode
-                                 window-layout
-                                 ) prelude-packages))
+                                 window-layout)
+                               prelude-packages))
 
 
 (setq prelude-auto-install-alist
