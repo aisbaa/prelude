@@ -67,6 +67,7 @@
 
 
 (add-hook 'c-mode-hook (lambda ()
+                         (require 'cmake-mode)
                          (cwarn-mode)))
 
 

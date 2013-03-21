@@ -17,8 +17,8 @@
 
 
 ;;; redo+
-(require 'redo+)
-(global-set-key (kbd "M-_") 'redo)
+;; (require 'redo+)
+;; (global-set-key (kbd "M-_") 'redo)
 
 
 ;;; recompile
