@@ -66,8 +66,8 @@ by Prelude.")
  (dolist (f (directory-files parent-dir))
    (let ((name (expand-file-name f parent-dir)))
      (when (and (file-directory-p name)
-     (not (equal f ".."))
-     (not (equal f ".")))
+                (not (equal f ".."))
+                (not (equal f ".")))
        (add-to-list 'load-path name)))))
 
 ;; add Prelude's directories to Emacs's `load-path'
@@ -91,8 +91,6 @@ by Prelude.")
   (require 'prelude-osx))
 
 ;; the modules
-(require 'prelude-programming)
-
 (when (file-exists-p prelude-modules-file)
   (load prelude-modules-file))
 
@@ -101,6 +99,7 @@ by Prelude.")
 
 ;; load the personal settings (this includes `custom-file')
 (when (file-exists-p prelude-personal-dir)
+  (message "Loading personal configuration files in %s..." prelude-personal-dir)
   (mapc 'load (directory-files prelude-personal-dir 't "^[^#].*el$")))
 
 (message "Prelude is ready to do thy bidding, Master %s!" (getenv "USER"))
