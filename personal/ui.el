@@ -102,4 +102,4 @@
 
 ;;; projectile adds .svn folder to projectile project root
 (if (not (member ".svn" projectile-project-root-files))
-    (add-to-list 'projectile-project-root-files ".svn" t))
+    (add-to-list 'projectile-project-root-files ".svn"))
