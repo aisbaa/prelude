@@ -55,6 +55,11 @@
 
             (local-set-key (kbd "C-c C-s") 'ascope-find-global-definition)
 
+            ;; show assembler
+            (require 'disaster)
+
+            (local-set-key (kbd "C-c C-d") 'disaster)
+
             ;; whitespace-mode
             (whitespace-mode t)
 

@@ -2,12 +2,12 @@
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/"))
 
-
 ;; packages
 (setq prelude-packages (append '(
                                  ascope
                                  auto-complete
                                  diminish
+                                 disaster
                                  emacs-eclim
                                  evil-numbers
                                  linum-off
