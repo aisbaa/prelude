@@ -1,3 +1,6 @@
+;;; cursor
+(blink-cursor-mode 1)
+
 ;;; fonts
 (set-face-attribute 'default nil :height 80)
 
