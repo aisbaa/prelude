@@ -1,32 +1,3 @@
-;;; whitespace cleanup settings
-(setq whitespace-style '(face
-                         tabs
-                         trailing
-                         spaces
-                         lines
-                         newline
-                         empty
-                         tab-mark
-                         newline-mark))
-
-(setq-default indent-tabs-mode nil)
-
-
-(setq whitespace-display-mappings
-      '((space-mark   ?\    [?\xB7]     [?.])	; space
-        (space-mark   ?\xA0 [?\xA4]     [?_])	; hard space
-        (newline-mark ?\n   [?\xB6 ?\n] [?$ ?\n])	; end-of-line
-        ))
-
-(setq whitespace-display-mappings
-      ;; all numbers are Unicode codepoint in decimal. e.g. (insert-char 182 1)
-      '(
-        (space-mark 32 [183] [46])
-        ;; (newline-mark 10 [182 10])
-        (newline-mark 10 [36 10])
-        (tab-mark 9 [187 9] [92 9])
-        ))
-
 (let ((class '((class color) (min-colors 89)))
       ;; Zenburn palette
       ;; colors with +x are lighter, colors with -x are darker

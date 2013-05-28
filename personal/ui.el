@@ -1,9 +1,32 @@
 ;;; cursor
 (blink-cursor-mode 1)
 
+
 ;;; fonts
 (set-face-attribute 'default nil :height 80)
 
+
+;;; whitespace cleanup settings
+(setq whitespace-style '(face
+                         tabs
+                         trailing
+                         spaces
+                         lines
+                         newline
+                         empty
+                         tab-mark
+                         newline-mark))
+
+
+(setq-default whitespace-line-column nil)
+
+(setq whitespace-display-mappings
+      ;; all numbers are Unicode codepoint in decimal. e.g. (insert-char 182 1)
+      '(
+        (space-mark 32 [183] [46])
+        (newline-mark 10 [36 10])
+        (tab-mark 9 [187 9] [92 9])
+        ))
 
 ;;; line numbers
 (global-linum-mode 1)
