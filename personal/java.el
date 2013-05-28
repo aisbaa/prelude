@@ -1,7 +1,8 @@
 ;; loads java-mode-hook
 (require 'cc-mode)
 
-(setq eclim-executable "/usr/share/eclipse/plugins/org.eclim_2.2.5/bin/eclim")
+(setq eclim-executable
+      "/usr/share/eclipse/plugins/org.eclim_2.2.5/bin/eclim")
 
 (setq eclimd-default-workspace "~/workspace")
 
@@ -28,6 +29,8 @@
 
                                ;; compile on save off
                                (compile-on-save-mode nil)
+
+                               (set-fill-column 100)
 
                                ;; fixes semantic inner class indentation
                                (setq inexpr-class tab-width)

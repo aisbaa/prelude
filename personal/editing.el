@@ -1,3 +1,9 @@
+;;; fill column
+(setq-default fill-column 78)
+
+;;; indentation
+(setq-default indent-tabs-mode nil)
+
 ;;; c-mode
 (add-hook 'c-mode-common-hook
           (lambda ()
