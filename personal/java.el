@@ -33,5 +33,5 @@
                                (set-fill-column 100)
 
                                ;; fixes semantic inner class indentation
-                               (setq inexpr-class tab-width)
+                               (c-set-offset 'inexpr-class 0)
                                ))
