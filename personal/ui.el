@@ -11,12 +11,11 @@
                          tabs
                          trailing
                          spaces
-                         lines
+                         lines-tail
                          newline
                          empty
                          tab-mark
                          newline-mark))
-
 
 (setq-default whitespace-line-column nil)
 
