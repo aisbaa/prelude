@@ -46,8 +46,8 @@
     git-commit-mode gitconfig-mode gitignore-mode
     guru-mode helm helm-projectile ido-ubiquitous
     key-chord magit melpa rainbow-mode
-    smex solarized-theme undo-tree
-    volatile-highlights yasnippet zenburn-theme)
+    smartparens smex solarized-theme undo-tree
+    volatile-highlights zenburn-theme)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
@@ -96,6 +96,7 @@ PACKAGE is installed only if not already present.  The file is opened in MODE."
     ("\\.md\\'" markdown-mode markdown-mode)
     ("\\.ml\\'" tuareg tuareg-mode)
     ("\\.php\\'" php-mode php-mode)
+    ("PKGBUILD\\'" pkgbuild-mode pkgbuild-mode)
     ("\\.sass\\'" sass-mode sass-mode)
     ("\\.scala\\'" scala-mode2 scala-mode)
     ("\\.scss\\'" scss-mode scss-mode)
@@ -108,6 +109,9 @@ PACKAGE is installed only if not already present.  The file is opened in MODE."
 (when (package-installed-p 'markdown-mode)
   (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
   (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode)))
+
+(when (package-installed-p 'pkgbuild-mode)
+  (add-to-list 'auto-mode-alist '("PKGBUILD\\'" . pkgbuild-mode)))
 
 ;; build auto-install mappings
 (mapc

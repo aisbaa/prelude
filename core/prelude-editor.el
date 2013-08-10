@@ -102,7 +102,9 @@ Will only occur if prelude-whitespace is also enabled."
                                          try-complete-lisp-symbol))
 
 ;; smart pairing for all
-(electric-pair-mode t)
+(setq sp-base-key-bindings 'paredit)
+(require 'smartparens-config)
+(smartparens-global-mode +1)
 
 ;; diminish keeps the modeline tidy
 (require 'diminish)
@@ -148,7 +150,8 @@ Will only occur if prelude-whitespace is also enabled."
   "Save the current buffer if `prelude-auto-save' is not nil."
   (when (and prelude-auto-save
              buffer-file-name
-             (buffer-modified-p (current-buffer)))
+             (buffer-modified-p (current-buffer))
+             (file-writable-p buffer-file-name))
     (save-buffer)))
 
 (defadvice switch-to-buffer (before save-buffer-now activate)
@@ -272,16 +275,6 @@ Will only occur if prelude-whitespace is also enabled."
 (setq bookmark-default-file (expand-file-name "bookmarks" prelude-savefile-dir)
       bookmark-save-flag 1)
 
-;; load yasnippet
-(require 'yasnippet)
-(add-to-list 'yas-snippet-dirs prelude-snippets-dir)
-(add-to-list 'yas-snippet-dirs prelude-personal-snippets-dir)
-(yas-global-mode 1)
-
-;; term-mode does not play well with yasnippet
-(add-hook 'term-mode-hook (lambda ()
-                            (yas-minor-mode -1)))
-
 ;; projectile is a project management mode
 (require 'projectile)
 (setq projectile-cache-file (expand-file-name  "projectile.cache" prelude-savefile-dir))
@@ -379,6 +372,9 @@ indent yanked text (with prefix arg don't indent)."
 ;; make a shell script executable automatically on save
 (add-hook 'after-save-hook
           'executable-make-buffer-file-executable-if-script-p)
+
+;; .zsh file is shell script too
+(add-to-list 'auto-mode-alist '("\\.zsh\\'" . shell-script-mode))
 
 ;; whitespace-mode config
 (require 'whitespace)
