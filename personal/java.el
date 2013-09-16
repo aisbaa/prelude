@@ -25,7 +25,7 @@
 
 (add-to-list 'java-mode-hook (lambda ()
                                ;; eclim
-                               (aisbaa-init-eclim)
+                               ;; (aisbaa-init-eclim)
 
                                ;; compile on save off
                                (compile-on-save-mode nil)
@@ -34,4 +34,8 @@
 
                                ;; fixes semantic inner class indentation
                                (c-set-offset 'inexpr-class 0)
+                               (c-set-offset 'brace-list-entry 0)
+                               (c-set-offset 'brace-list-intro tab-width)
+                               (c-set-offset 'brace-entry-open tab-width)
+                               (c-set-offset 'annotation-var-cont 0)
                                ))
