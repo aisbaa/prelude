@@ -7,6 +7,9 @@
 ;;; c-mode
 (add-hook 'c-mode-common-hook
           (lambda ()
+            ;; changes indentation mode to tabs
+            (setq indent-tabs-mode t)
+
             ;; setting offset to match tab width
             (setq c-basic-offset tab-width)
 
@@ -22,9 +25,9 @@
 
             ;; sets one level indentation for function calls that has to many
             ;; arguments to fit it all in one line
-            (c-set-offset 'arglist-cont-nonempty tab-width)
+            (c-set-offset 'arglist-cont-nonempty '+)
 
-            (c-set-offset 'arglist-intro tab-width)
+            (c-set-offset 'arglist-intro '+)
 
             ;; indent closing function call brace
             (c-set-offset 'arglist-close 0)
@@ -33,25 +36,25 @@
             (c-set-offset 'substatement-open 0)
 
             ;; firs line in function definition
-            (c-set-offset 'defun-block-intro tab-width)
+            (c-set-offset 'defun-block-intro '+)
 
             ;; indenting after block opening statement
-            (c-set-offset 'statement-block-intro tab-width)
+            (c-set-offset 'statement-block-intro '+)
 
             ;; if/for/while/etc without opening braces
-            (c-set-offset 'substatement tab-width)
+            (c-set-offset 'substatement '+)
 
             ;; case
-            (c-set-offset 'statement-case-intro tab-width)
+            (c-set-offset 'statement-case-intro '+)
 
             ;; continue after \
-            (c-set-offset 'statement-cont tab-width)
+            (c-set-offset 'statement-cont '+)
 
             ;; start of comment
             (c-set-offset 'comment-intro 0)
 
             ;; structure and probably class indentation
-            (c-set-offset 'inclass tab-width)
+            (c-set-offset 'inclass '+)
 
             ;; inside extern "C" { }
             (c-set-offset 'inextern-lang 0)
@@ -94,6 +97,12 @@
             ;; recompile on save
             (compile-on-save-mode)))
 
+
+;;; luad
+(add-hook 'lua-mode-hook (lambda ()
+                           (setq tab-width 8)
+                           (setq lua-indent-level tab-width)
+                           (setq indent-tabs-mode t))
 
 ;;; minor modes
 (yas-global-mode 1)
