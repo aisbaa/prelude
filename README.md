@@ -225,10 +225,10 @@ You'd probably do well to put a few aliases in your `.zshrc` (or
 `.bashrc`):
 
 ```bash
-alias e=emacsclient -t
-alias ec=emacsclient -c
-alias vim=emacsclient -t
-alias vi=emacsclient -t
+alias e='emacsclient -t'
+alias ec='emacsclient -c'
+alias vim='emacsclient -t'
+alias vi='emacsclient -t'
 ```
 
 The last two aliases are helpful if you're used to editing files from
@@ -443,6 +443,12 @@ If you require just a single package you can also use:
 (prelude-require-package 'some-package)
 ```
 
+#### Preloading personal config
+
+Sometimes you might want to load code before Prelude has started loading. Prelude will automatically preload all
+Emacs Lisp files in your `personal/preload` directory. Note that at this point you can't using anything from
+Prelude, except a few variables like `prelude-dir`, etc (since nothing is yet loaded).
+
 #### Disabling whitespace-mode
 
 Although `whitespace-mode` is awesome some people might find it too
@@ -577,12 +583,10 @@ time. This situation will probably improve over time.
 
 ## Share the knowledge
 
-[WikEmacs](http://wikemacs.org) collects useful resources for working
+[EmacsWiki](http://emacswiki.org) collects useful resources for working
 with GNU Emacs. Please, take the time to peruse and improve them as
 you accumulate knowledge about Emacs. Prelude makes this especially
 easy, since it bundles
-[MediaWiki support](http://wikemacs.org/wiki/Mediawiki.el) + the
-settings required to access WikEmacs right away.
 
 ## Known issues
 
