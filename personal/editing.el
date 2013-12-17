@@ -10,6 +10,9 @@
             ;; changes indentation mode to tabs
             (setq indent-tabs-mode t)
 
+            ;; setting tab-width
+            (setq tab-width aisbaa-default-tab-width)
+
             ;; setting offset to match tab width
             (setq c-basic-offset tab-width)
 
@@ -100,9 +103,16 @@
 
 ;;; luad
 (add-hook 'lua-mode-hook (lambda ()
-                           (setq tab-width 8)
+                           (setq tab-width aisbaa-default-tab-width)
                            (setq lua-indent-level tab-width)
-                           (setq indent-tabs-mode t))
+                           (setq indent-tabs-mode t)))
+
+;; cmake
+(add-hook 'cmake-mode-hook (lambda ()
+                             (setq tab-width aisbaa-default-tab-width)
+                             (setq cmake-tab-width tab-width)
+                             (setq indent-tabs-mode t)
+                             (whitespace-mode t)))
 
 ;;; minor modes
 (yas-global-mode 1)
