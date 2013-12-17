@@ -116,7 +116,7 @@
 (diminish 'eldoc-mode " eldoc")
 (diminish 'flyspell-mode " ✈")
 (diminish 'guru-mode "")
-(diminish 'paredit-mode " π")
+(diminish 'smartparens-mode " π")
 (diminish 'prelude-mode " ♪")
 (diminish 'projectile-mode " ☄")
 (diminish 'rainbow-mode " ☈")
