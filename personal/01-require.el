@@ -10,6 +10,7 @@
 
 (require 'auto-complete)
 (require 'auto-complete-config)
+(require 'cmake-mode)
 (require 'flyspell)
 (require 'guru-mode)
 (require 'linum-off)

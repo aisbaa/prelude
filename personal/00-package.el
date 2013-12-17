@@ -8,6 +8,7 @@
                                  auto-complete
                                  diminish
                                  disaster
+                                 cmake-mode
                                  evil-numbers
                                  linum-off
                                  redo+
