@@ -8,15 +8,14 @@
                                  auto-complete
                                  diminish
                                  disaster
-                                 emacs-eclim
                                  evil-numbers
                                  linum-off
-                                 octave-mod
                                  redo+
                                  simpleclip
                                  sr-speedbar
                                  ssh-config-mode
                                  window-layout
+                                 yasnippet
                                  )
                                prelude-packages))
 
