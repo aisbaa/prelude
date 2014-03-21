@@ -61,14 +61,6 @@
 (global-set-key (kbd "C-c C-t") 'sr-speedbar-toggle)
 
 
-;;; c-mode
-(add-hook 'c-mode-common-hook
-          (lambda ()
-            (linum-mode t)
-            (semantic-mode t)
-            (semantic-stickyfunc-mode t)))
-
-
 ;;; lisp-mode
 
 ;;; adding line number to each lisp mode

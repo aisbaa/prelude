@@ -22,6 +22,9 @@
             ;; sets column limit to 78th character
             (set-fill-column 78)
 
+            ;; line numbers
+            (linum-mode t)
+
             ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
             ;; semantic indentation settings ;;
             ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -67,11 +70,6 @@
 
             (local-set-key (kbd "C-c C-s") 'ascope-find-global-definition)
 
-            ;; show assembler
-            (require 'disaster)
-
-            (local-set-key (kbd "C-c C-d") 'disaster)
-
             ;; whitespace-mode
             (whitespace-mode t)
 
@@ -84,7 +82,6 @@
 
 
 (add-hook 'c-mode-hook (lambda ()
-                         (require 'cmake-mode)
                          (cwarn-mode)))
 
 
@@ -101,7 +98,7 @@
             (compile-on-save-mode)))
 
 
-;;; luad
+;;; lua
 (add-hook 'lua-mode-hook (lambda ()
                            (setq tab-width aisbaa-default-tab-width)
                            (setq lua-indent-level tab-width)
