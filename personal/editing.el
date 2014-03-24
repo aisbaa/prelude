@@ -77,12 +77,38 @@
             (compile-on-save-mode)))
 
 
+(require 'auto-complete-clang)
+
+(defun aisbaa-cpp-completion ()
+  (setq ac-sources (append '(ac-source-clang) ac-sources)))
+
+(defvar ac-clang-flags-base
+      (mapcar (lambda (item)(concat "-I" item))
+
+              '("/usr/local/include"
+                "/usr/include"
+
+                ;; c++ headers
+                "/usr/include/c++/4.8.2"
+                "/usr/include/c++/4.8.2/backward"
+                "/usr/include/c++/4.8.2/x86_64-unknown-linux-gnu"
+
+                ;; c headers
+                "/usr/lib/gcc/x86_64-unknown-linux-gnu/4.8.2/include"
+                "/usr/lib/gcc/x86_64-unknown-linux-gnu/4.8.2/include-fixed"
+                ))
+      "Default include paths for clang completion")
+
+;; these are separate because c-mode-common-hook is also used by java mode,
+;; probably may other too
 (add-hook 'c++-mode-hook (lambda ()
-                         (cwarn-mode)))
+                         (cwarn-mode)
+                         (aisbaa-cpp-completion)))
 
 
 (add-hook 'c-mode-hook (lambda ()
-                         (cwarn-mode)))
+                         (cwarn-mode)
+                         (aisbaa-cpp-completion)))
 
 
 ;;; html-mode
@@ -96,13 +122,6 @@
           (lambda ()
             ;; recompile on save
             (compile-on-save-mode)))
-
-
-;;; lua
-(add-hook 'lua-mode-hook (lambda ()
-                           (setq tab-width aisbaa-default-tab-width)
-                           (setq lua-indent-level tab-width)
-                           (setq indent-tabs-mode t)))
 
 ;; cmake
 (add-hook 'cmake-mode-hook (lambda ()
