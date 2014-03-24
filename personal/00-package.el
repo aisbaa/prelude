@@ -4,10 +4,8 @@
 
 ;; packages
 (setq prelude-packages (append '(
-                                 ascope
                                  auto-complete
                                  diminish
-                                 disaster
                                  cmake-mode
                                  evil-numbers
                                  linum-off
