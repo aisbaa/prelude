@@ -25,6 +25,12 @@
             ;; line numbers
             (linum-mode t)
 
+            ;; whitespace-mode
+            (whitespace-mode t)
+
+            ;; recompile on save
+            (compile-on-save-mode)
+
             ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
             ;; semantic indentation settings ;;
             ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -63,18 +69,7 @@
             (c-set-offset 'inclass '+)
 
             ;; inside extern "C" { }
-            (c-set-offset 'inextern-lang 0)
-
-            ;; adds quick symbol find solution
-            (require 'ascope)
-
-            (local-set-key (kbd "C-c C-s") 'ascope-find-global-definition)
-
-            ;; whitespace-mode
-            (whitespace-mode t)
-
-            ;; recompile on save
-            (compile-on-save-mode)))
+            (c-set-offset 'inextern-lang 0)))
 
 
 (require 'auto-complete-clang)
