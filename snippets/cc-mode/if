@@ -1,0 +1,7 @@
+# name: if NeurotecSDK
+# key: if
+# --
+if ($1)
+{
+	$2
+}
