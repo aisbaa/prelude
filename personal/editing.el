@@ -1,3 +1,6 @@
+;; projectile
+(setq projectile-enable-caching t)
+
 ;;; fill column
 (setq-default fill-column 78)
 
