@@ -1,13 +1,23 @@
-;;; additional repositories
+;;; package --- additional packages
+;;;
+;;; Commentary:
+;;;
+;;; packages that must be installed before other settings execution.
+;;;
+;;; Code:
+
+(require 'prelude-packages)
+
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/"))
 
 ;; packages
 (setq prelude-packages (append '(
                                  auto-complete
-                                 diminish
                                  cmake-mode
+                                 diminish
                                  evil-numbers
+                                 flx-ido
                                  linum-off
                                  redo+
                                  simpleclip
@@ -25,3 +35,7 @@
 
 ;; Installs my packages
 (prelude-install-packages)
+
+
+(provide '00-package)
+;;; 00-package.el ends here
