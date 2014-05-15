@@ -1,6 +1,3 @@
-;; projectile
-(setq projectile-enable-caching t)
-
 ;;; fill column
 (setq-default fill-column 78)
 
@@ -74,39 +71,14 @@
             ;; inside extern "C" { }
             (c-set-offset 'inextern-lang 0)))
 
-
-(require 'auto-complete-clang)
-
-(defun aisbaa-cpp-completion ()
-  (setq ac-sources (append '(ac-source-clang) ac-sources)))
-
-(defvar ac-clang-flags-base
-      (mapcar (lambda (item)(concat "-I" item))
-
-              '("/usr/local/include"
-                "/usr/include"
-
-                ;; c++ headers
-                "/usr/include/c++/4.8.2"
-                "/usr/include/c++/4.8.2/backward"
-                "/usr/include/c++/4.8.2/x86_64-unknown-linux-gnu"
-
-                ;; c headers
-                "/usr/lib/gcc/x86_64-unknown-linux-gnu/4.8.2/include"
-                "/usr/lib/gcc/x86_64-unknown-linux-gnu/4.8.2/include-fixed"
-                ))
-      "Default include paths for clang completion")
-
 ;; these are separate because c-mode-common-hook is also used by java mode,
 ;; probably may other too
 (add-hook 'c++-mode-hook (lambda ()
-                         (cwarn-mode)
-                         (aisbaa-cpp-completion)))
+                         (cwarn-mode)))
 
 
 (add-hook 'c-mode-hook (lambda ()
-                         (cwarn-mode)
-                         (aisbaa-cpp-completion)))
+                         (cwarn-mode)))
 
 
 ;;; html-mode
