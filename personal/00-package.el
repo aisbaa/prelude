@@ -14,6 +14,7 @@
 ;; packages
 (setq prelude-packages (append '(
                                  auto-complete
+                                 buffer-move
                                  cmake-mode
                                  diminish
                                  evil-numbers

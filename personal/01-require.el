@@ -10,6 +10,7 @@
 
 (require 'auto-complete)
 (require 'auto-complete-config)
+(require 'buffer-move)
 (require 'cmake-mode)
 (require 'flyspell)
 (require 'guru-mode)
