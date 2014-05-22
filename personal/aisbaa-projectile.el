@@ -20,5 +20,13 @@
 (setq projectile-enable-caching t)
 
 
+
+(defun aisbaa-init-ascope ()
+  "Initialize ascope to the opened project."
+  (interactive)
+  (require 'ascope)
+  (ascope-init (projectile-project-root)))
+
+
 (provide 'aisbaa-projectile)
 ;;; aisbaa-projectile.el ends here
