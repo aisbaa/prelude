@@ -1,0 +1,7 @@
+# name: NTech function definition
+# key: nfunc_h
+# --
+/**
+ * $0
+ */
+NResult N_API $1($2);

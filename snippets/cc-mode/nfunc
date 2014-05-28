@@ -1,0 +1,11 @@
+# name: NTech function declaration
+# key: nfunc
+# --
+NResult N_API $1($2)
+{
+N_TRY
+	$0
+N_FINALLY
+
+N_TRY_END
+}
