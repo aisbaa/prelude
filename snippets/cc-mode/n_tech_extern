@@ -1,0 +1,13 @@
+# name: extern block
+# key: extern
+# --
+#ifdef N_CPP
+extern "${1:C}"
+{
+#endif
+
+$0
+
+#ifdef N_CPP
+}
+#endif

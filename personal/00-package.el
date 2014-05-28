@@ -22,13 +22,13 @@
                                  linum-off
                                  redo+
                                  simpleclip
+                                 smex
                                  sr-speedbar
                                  ssh-config-mode
                                  window-layout
                                  yasnippet
                                  )
                                prelude-packages))
-
 
 (setq prelude-auto-install-alist
       (append prelude-auto-install-alist
