@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Neurotechnology check macros
+# key: check
+# --
+N_CHECK($0);

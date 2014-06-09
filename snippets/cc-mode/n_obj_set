@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Neurotechnology object set macros
+# key: nobjset
+# --
+N_CHECK(NObjectSet(${1:NULL}, (HNObject*)&$0));
