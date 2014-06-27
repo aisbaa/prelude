@@ -2,6 +2,9 @@
 (blink-cursor-mode 1)
 
 
+(setq flycheck-disabled-checkers '(emacs-lisp-checkdoc))
+
+
 ;;; fonts
 (set-face-attribute 'default nil :height 80)
 
