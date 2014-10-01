@@ -19,6 +19,7 @@
                                  diminish
                                  evil-numbers
                                  flx-ido
+                                 ggtags
                                  linum-off
                                  redo+
                                  simpleclip
