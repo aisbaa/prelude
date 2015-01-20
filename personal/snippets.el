@@ -19,5 +19,6 @@
   "Convert string from camel case to header guard format, e.x.:
 S is string, e.x.: NIoBinaryWriter -> N_IO_BINARY_WRITER"
   (upcase (aa-un-camelcase-string s "_" 1)))
+
 (provide 'snippets)
 ;;; snippets.el ends here

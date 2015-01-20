@@ -19,6 +19,7 @@
                                  diminish
                                  evil-numbers
                                  flx-ido
+                                 flymake-cursor
                                  ggtags
                                  linum-off
                                  redo+
