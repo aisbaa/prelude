@@ -1,6 +1,6 @@
 ;;; prelude-emacs-lisp.el --- Emacs Prelude: Nice config for Elisp programming.
 ;;
-;; Copyright © 2011-2013 Bozhidar Batsov
+;; Copyright © 2011-2014 Bozhidar Batsov
 ;;
 ;; Author: Bozhidar Batsov <bozhidar@batsov.com>
 ;; URL: https://github.com/bbatsov/prelude
@@ -34,6 +34,8 @@
 ;;; Code:
 
 (require 'prelude-lisp)
+
+(prelude-require-packages '(elisp-slime-nav rainbow-mode))
 
 (defun prelude-recompile-elc-on-save ()
   "Recompile your elc when saving an elisp file."
