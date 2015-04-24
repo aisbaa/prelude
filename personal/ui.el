@@ -22,6 +22,10 @@
 (global-set-key (kbd "C-c C-t") 'sr-speedbar-toggle)
 
 
+;;; visual bookmarks
+(require 'bm)
+
+
 ;;; lisp-mode
 
 ;;; adding line number to each lisp mode

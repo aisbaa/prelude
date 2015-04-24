@@ -14,6 +14,7 @@
 ;; packages
 (setq prelude-packages (append '(
                                  auto-complete
+                                 bm
                                  buffer-move
                                  cmake-mode
                                  diminish
