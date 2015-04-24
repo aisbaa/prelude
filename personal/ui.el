@@ -25,6 +25,8 @@
 ;;; visual bookmarks
 (require 'bm)
 
+(global-set-key (kbd "M-D") 'bm-toggle)
+
 
 ;;; lisp-mode
 
