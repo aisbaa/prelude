@@ -24,3 +24,7 @@
                               (whitespace-mode t)
                               (compile-on-save-mode)
                               (flyspell-prog-mode)))
+
+;; setting aspell for 
+(if (string-equal system-type "darwin")
+    (setq ispell-program-name "/Users/aistisjokubauskas/opt/bin/aspell"))
