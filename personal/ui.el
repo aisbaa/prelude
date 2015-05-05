@@ -5,6 +5,10 @@
 (setq flycheck-disabled-checkers '(emacs-lisp-checkdoc))
 
 
+;; smartparren
+(smartparens-global-mode t)
+
+
 ;;; whitespace cleanup settings.
 (ac-set-trigger-key "TAB")
 (define-key ac-mode-map (kbd "M-SPC") 'auto-complete)
