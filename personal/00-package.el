@@ -14,20 +14,25 @@
 ;; packages
 (setq prelude-packages (append '(
                                  auto-complete
+                                 bm
                                  buffer-move
-                                 cmake-mode
                                  diminish
                                  evil-numbers
                                  flx-ido
                                  flymake-cursor
+                                 flymake-python-pyflakes
+                                 foreman-mode
                                  ggtags
+                                 js2-mode
                                  linum-off
+                                 nginx-mode
+                                 rainbow-delimiters
+                                 rainbow-mode
                                  redo+
                                  simpleclip
                                  smex
                                  sr-speedbar
                                  ssh-config-mode
-                                 window-layout
                                  yasnippet
                                  )
                                prelude-packages))
