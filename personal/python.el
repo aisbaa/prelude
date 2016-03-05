@@ -5,7 +5,7 @@
 (add-hook 'python-mode-hook (lambda () 
                               (auto-complete-mode t)
                               (whitespace-mode t)
-                              ;; (compile-on-save-mode)
+                              (compile-on-save-mode)
                               (require 'sphinx-doc)
                               (sphinx-doc-mode t)
                               (flyspell-prog-mode)
@@ -14,6 +14,12 @@
           )
 
 (setq flymake-python-pyflakes-executable "flake8")
+
+(add-hook 'compilation-mode-hook (lambda ()
+                                   (highlight-regexp "ERROR" 'hi-red-b)
+                                   (highlight-regexp "FAILED" 'hi-red-b)
+                                   (highlight-regexp "PASSED" 'hi-green-b)
+                                   ))
 
 ;; setting aspell for 
 (if (string-equal system-type "darwin")
