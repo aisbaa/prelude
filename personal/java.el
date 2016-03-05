@@ -2,9 +2,12 @@
 (require 'cc-mode)
 
 (add-to-list 'java-mode-hook (lambda ()
-                               (setq indent-tabs-mode t)
+                               (setq indent-tabs-mode nil
+                                     c-basic-offset 4)
 
-                               (set-fill-column 100)
+                               (set-fill-column 80)
+                               (whitespace-mode t)
+                               (auto-complete-mode t)
 
                                ;; fixes semantic inner class indentation
                                (c-set-offset 'inexpr-class 0)

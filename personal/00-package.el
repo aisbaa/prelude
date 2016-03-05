@@ -23,6 +23,7 @@
                                  flymake-python-pyflakes
                                  foreman-mode
                                  ggtags
+                                 highlight-chars
                                  js2-mode
                                  linum-off
                                  nginx-mode
