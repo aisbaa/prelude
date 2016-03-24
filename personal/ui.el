@@ -1,6 +1,5 @@
 ;;; helm
 
-(helm-mode 1)
 (helm-autoresize-mode t)
 
 (setq
@@ -11,8 +10,6 @@
 ;;; cursor
 (blink-cursor-mode 1)
 (setq x-stretch-cursor 1)
-
-
 
 
 ;; smartparren
