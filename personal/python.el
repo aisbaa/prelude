@@ -19,6 +19,7 @@
                                    (highlight-regexp "ERROR" 'hi-red-b)
                                    (highlight-regexp "FAILED" 'hi-red-b)
                                    (highlight-regexp "PASSED" 'hi-green-b)
+                                   (highlight-regexp "Assertion Failed:" 'hi-pink)
                                    ))
 
 ;; setting aspell for 
