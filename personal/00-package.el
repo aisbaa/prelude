@@ -1,11 +1,3 @@
-;;; package --- additional packages
-;;;
-;;; Commentary:
-;;;
-;;; packages that must be installed before other settings execution.
-;;;
-;;; Code:
-
 (require 'prelude-packages)
 
 (add-to-list 'package-archives
@@ -44,7 +36,3 @@
 
 ;; Installs my packages
 (prelude-install-packages)
-
-
-(provide '00-package)
-;;; 00-package.el ends here
