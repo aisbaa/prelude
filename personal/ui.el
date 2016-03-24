@@ -1,8 +1,18 @@
+;;; helm
+
+(helm-mode 1)
+(helm-autoresize-mode t)
+
+(setq
+ helm-autoresize-max-height                      40 ; it is %.
+ helm-autoresize-min-height                      20 ; it is %.
+ )
+
 ;;; cursor
 (blink-cursor-mode 1)
+(setq x-stretch-cursor 1)
 
 
-(setq flycheck-disabled-checkers '(emacs-lisp-checkdoc))
 
 
 ;; smartparren
@@ -10,8 +20,9 @@
 
 
 ;;; whitespace cleanup settings.
+(global-auto-complete-mode t)
 (ac-set-trigger-key "TAB")
-(define-key ac-mode-map (kbd "M-SPC") 'auto-complete)
+;; (define-key ac-mode-map (kbd "M-SPC") 'auto-complete)
 
 ;;; scroll-bar
 (scroll-bar-mode -1)
@@ -26,13 +37,10 @@
 (global-set-key (kbd "C-c C-t") 'sr-speedbar-toggle)
 
 
-;;; visual bookmarks
-(require 'bm)
-
-(global-set-key (kbd "M-D") 'bm-toggle)
-
 
 ;;; lisp-mode
+
+(setq flycheck-disabled-checkers '(emacs-lisp-checkdoc))
 
 ;;; adding line number to each lisp mode
 (dolist (hook '(lisp-mode-hook
@@ -48,26 +56,6 @@
 (add-hook 'compilation-mode-hook
           (lambda ()
             (setq display-buffer-reuse-frames t)))
-
-
-(defun aisbaa-compilation-layout ()
-  "Splits windows for compilation and log monitoring:
-|--------------------|
-| log file           |
-|--------------------|
-| compilation buffer |
-|--------------------|
-"
-  ;; (delete-other-windows)
-  (wlf:layout
-   '(- (:upper-size-ratio 0.2)
-       log-file
-       compilation)
-   '((:name log-file :buffer "*scratch*")
-     (:name compilation :buffer "*compilation*")))
-  "compilation layout")
-
-(global-set-key (kbd "C-x c 1") 'aisbaa-compilation-layout)
 
 
 ;;; diminish mode line

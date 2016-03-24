@@ -7,6 +7,16 @@
 (global-set-key (kbd "C-x t ") 'aisbaa-insert-time)
 
 
+;; opening files
+(global-set-key (kbd "C-x C-f") 'ido-find-file)
+
+
+;; helm integration
+(global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "C-x b") 'helm-buffer-list)
+(global-set-key (kbd "C-s") 'helm-occur)
+
+
 ;;; woman
 (global-set-key (kbd "<f1>") 'woman)
 
@@ -27,14 +37,6 @@
 
 ;;; replace string functionality
 (global-set-key (kbd "C-R") 'replace-string)
-
-
-;;; sort lines
-(global-set-key (kbd "C-c S") 'sort-lines)
-
-
-;;; frames
-(global-set-key (kbd "C-x O") 'other-frame)
 
 
 ;;; yas-snippet
