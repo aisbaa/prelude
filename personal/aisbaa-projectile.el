@@ -1,11 +1,3 @@
-;;; package --- projectile settings
-;;;
-;;; Commentary:
-;;;
-;;; Additional settings to projectile module.
-;;;
-;;; Code:
-
 (require 'projectile)
 
 (setq projectile-globally-ignored-directories
@@ -17,16 +9,9 @@
 
 
 ;; projectile
+(projectile-global-mode)
+
+(setq projectile-completion-system 'helm)
 (setq projectile-enable-caching t)
-
-
-
-(defun aisbaa-init-ascope ()
-  "Initialize ascope to the opened project."
-  (interactive)
-  (require 'ascope)
-  (ascope-init (projectile-project-root)))
-
-
-(provide 'aisbaa-projectile)
-;;; aisbaa-projectile.el ends here
+(setq projectile-switch-project-action 'helm-projectile)
+(setq projectile-use-git-grep t)
