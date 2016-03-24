@@ -30,11 +30,6 @@
 (global-set-key (kbd "C-- ") 'evil-numbers/dec-at-pt)
 
 
-;;; redo+
-;; (require 'redo+)
-;; (global-set-key (kbd "M-_") 'redo)
-
-
 ;;; recompile
 (global-set-key (kbd "C-c C-r") 'recompile)
 
