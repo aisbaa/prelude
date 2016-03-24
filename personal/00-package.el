@@ -14,7 +14,6 @@
 ;; packages
 (setq prelude-packages (append '(
                                  auto-complete
-                                 bm
                                  buffer-move
                                  diminish
                                  evil-numbers
@@ -23,7 +22,8 @@
                                  flymake-python-pyflakes
                                  foreman-mode
                                  ggtags
-                                 highlight-chars
+                                 helm
+                                 helm-projectile
                                  js2-mode
                                  linum-off
                                  nginx-mode
