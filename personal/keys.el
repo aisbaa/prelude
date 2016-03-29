@@ -11,13 +11,13 @@
 (require 'ido)
 (ido-mode t)
 (global-set-key (kbd "C-x C-f") 'ido-find-file)
+(global-set-key (kbd "C-x b") 'ido-switch-buffer)
 
 
 ;; helm integration
 (require 'helm)
 (helm-mode t)
 (global-set-key (kbd "M-x") 'helm-M-x)
-(global-set-key (kbd "C-x b") 'helm-buffers-list)
 (global-set-key (kbd "C-s") 'helm-occur)
 
 
