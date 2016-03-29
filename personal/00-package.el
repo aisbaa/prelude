@@ -18,6 +18,7 @@
                                  helm-projectile
                                  js2-mode
                                  linum-off
+                                 markdown-mode
                                  nginx-mode
                                  rainbow-delimiters
                                  rainbow-mode
