@@ -18,7 +18,10 @@
 (require 'helm)
 (helm-mode t)
 (global-set-key (kbd "M-x") 'helm-M-x)
-(global-set-key (kbd "C-s") 'helm-occur)
+(global-set-key (kbd "C-M-s") 'helm-occur)
+
+
+(global-set-key (kbd "C-s") 'isearch-forward)
 
 
 ;;; woman
