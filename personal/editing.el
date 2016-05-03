@@ -24,12 +24,5 @@
                             (whitespace-mode t)))
 
 
-;;; makefile-mode
-(add-hook 'makefile-mode-hook
-          (lambda ()
-            ;; recompile on save
-            (compile-on-save-mode)))
-
-
 ;;; minor modes
 (yas-global-mode 1)
