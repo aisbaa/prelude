@@ -1,3 +1,4 @@
+(require 'feature-mode)
 (add-to-list 'feature-mode-hook (lambda ()
                                   (whitespace-mode t)
                                   (compile-on-save-mode)
