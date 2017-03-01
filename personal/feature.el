@@ -1,7 +1,7 @@
-(require 'feature-mode)
+;; customization for emacs feature mode (bdd tests)
 
-(add-to-list 'feature-mode-hook (lambda ()
-                                  (flyspell-mode t)
-                                  (whitespace-mode t)
-                                  (compile-on-save-mode)
-                                  ))
+(eval-after-load 'feature-mode
+  '(add-to-list 'feature-mode-hook (lambda ()
+                                     (flyspell-mode t)
+                                     (whitespace-mode t)
+                                     (compile-on-save-mode))))
