@@ -1,4 +1,4 @@
-# name: pprint
+# name: import pprint
 # key: pprint(
 # --
 from pprint import pprint; pprint($0
