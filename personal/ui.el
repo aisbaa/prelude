@@ -1,11 +1,7 @@
 ;;; helm
 
 (helm-autoresize-mode t)
-
-(setq
- helm-autoresize-max-height                      40 ; it is %.
- helm-autoresize-min-height                      20 ; it is %.
- )
+(setq helm-split-window-in-side-p t)
 
 ;;; cursor
 (blink-cursor-mode 1)
