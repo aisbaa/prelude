@@ -12,10 +12,10 @@
 (smartparens-global-mode t)
 
 
-;;; whitespace cleanup settings.
+;;; autocomplete settings
 (global-auto-complete-mode t)
 (ac-set-trigger-key "TAB")
-;; (define-key ac-mode-map (kbd "M-SPC") 'auto-complete)
+(customize-set-variable 'ac-auto-show-menu 0.001)
 
 ;;; scroll-bar
 (scroll-bar-mode -1)
@@ -27,7 +27,7 @@
 (custom-set-variables
  '(speedbar-show-unknown-files t))
 
-(global-set-key (kbd "C-c C-t") 'sr-speedbar-toggle)
+;; (global-set-key (kbd "C-c C-t") 'sr-speedbar-toggle)
 
 
 
@@ -35,7 +35,7 @@
 
 (setq flycheck-disabled-checkers '(emacs-lisp-checkdoc))
 
-;;; adding line number to each lisp mode
+;;; enabling linum-mode for these modes
 (dolist (hook '(lisp-mode-hook
                 common-lisp-mode-hook
                 emacs-lisp-mode-hook

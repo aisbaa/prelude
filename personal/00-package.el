@@ -5,6 +5,7 @@
 
 ;; packages
 (setq prelude-packages (append '(
+                                 ansible-vault
                                  auto-complete
                                  buffer-move
                                  diminish
@@ -30,10 +31,6 @@
                                  yasnippet
                                  )
                                prelude-packages))
-
-(setq prelude-auto-install-alist
-      (append prelude-auto-install-alist
-              '(("\\.cs\\'" csharp-mode))))
 
 ;; Installs my packages
 (prelude-install-packages)
