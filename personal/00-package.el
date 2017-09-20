@@ -9,6 +9,7 @@
                                  auto-complete
                                  buffer-move
                                  diminish
+                                 elpy
                                  evil-numbers
                                  flx-ido
                                  flymake-cursor
