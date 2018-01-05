@@ -8,6 +8,11 @@
 (setq x-stretch-cursor 1)
 
 
+;; fill-column mode (draws a line at 79th column)
+(setq fci-rule-color "#6f6f6f")
+(setq fci-rule-column 79)
+
+
 ;; smartparren
 (smartparens-global-mode t)
 
