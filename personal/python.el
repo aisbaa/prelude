@@ -8,7 +8,9 @@
             (compile-on-save-mode)
             ;; (sphinx-doc-mode t)
             (flyspell-prog-mode)
-            (rainbow-delimiters-mode t)))
+            (rainbow-delimiters-mode t)
+            (turn-on-fci-mode)
+            ))
 
 
 (setq flymake-python-pyflakes-executable "flake8")
