@@ -11,14 +11,13 @@
                                  diminish
                                  elpy
                                  evil-numbers
+                                 fill-column-indicator
                                  flx-ido
                                  flymake-cursor
                                  flymake-python-pyflakes
-                                 foreman-mode
                                  ggtags
                                  helm
                                  helm-projectile
-                                 js2-mode
                                  linum-off
                                  markdown-mode
                                  nginx-mode
