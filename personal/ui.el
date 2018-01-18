@@ -1,3 +1,6 @@
+;;; global
+(menu-bar-mode +1)
+
 ;;; helm
 
 (helm-autoresize-mode t)
