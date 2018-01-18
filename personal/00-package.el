@@ -18,12 +18,14 @@
                                  ggtags
                                  helm
                                  helm-projectile
+                                 json-mode
                                  linum-off
                                  markdown-mode
                                  nginx-mode
                                  rainbow-delimiters
                                  rainbow-mode
                                  redo+
+                                 restclient
                                  simpleclip
                                  smex
                                  sr-speedbar
