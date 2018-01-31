@@ -3,7 +3,6 @@
 (provide '00-a-global-variables)
 
 (set-face-attribute 'default nil :height 100)
-(setq markdown-command "pandoc")
 
 (add-to-list 'auto-mode-alist '("\\.http\\'"    . restclient-mode))
 
