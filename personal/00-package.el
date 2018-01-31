@@ -1,8 +1,5 @@
 (require 'prelude-packages)
 
-(add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/"))
-
 ;; packages
 (setq prelude-packages (append '(
                                  ansible-vault
