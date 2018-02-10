@@ -21,7 +21,6 @@
                                  nginx-mode
                                  rainbow-delimiters
                                  rainbow-mode
-                                 redo+
                                  restclient
                                  simpleclip
                                  smex
