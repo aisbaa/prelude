@@ -6,7 +6,6 @@
             (auto-complete-mode t)
             (whitespace-mode t)
             (compile-on-save-mode)
-            ;; (sphinx-doc-mode t)
             (flyspell-prog-mode)
             (rainbow-delimiters-mode t)
             (turn-on-fci-mode)
