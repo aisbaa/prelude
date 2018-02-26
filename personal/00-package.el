@@ -13,6 +13,7 @@
                                  flymake-cursor
                                  flymake-python-pyflakes
                                  ggtags
+                                 go-guru
                                  helm
                                  helm-projectile
                                  json-mode
