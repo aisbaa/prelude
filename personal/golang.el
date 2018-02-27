@@ -1,6 +1,6 @@
 (add-hook 'go-mode-hook (lambda ()
                           (setq-local whitespace-style
-                                      '(face spaces tabs newline space-mark tab-mark newline-mark))
+                                      '(face trailing lines-tail empty indentation space-after-tab space-before-tab))
                           (whitespace-mode t)
 
                           (compile-on-save-mode)
