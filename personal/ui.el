@@ -39,10 +39,6 @@
 
 
 
-;;; lisp-mode
-
-(setq flycheck-disabled-checkers '(emacs-lisp-checkdoc))
-
 ;;; enabling linum-mode for these modes
 (dolist (hook '(lisp-mode-hook
                 common-lisp-mode-hook
