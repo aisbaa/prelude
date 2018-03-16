@@ -35,10 +35,6 @@
 (custom-set-variables
  '(speedbar-show-unknown-files t))
 
-;; (global-set-key (kbd "C-c C-t") 'sr-speedbar-toggle)
-
-
-
 ;;; enabling linum-mode for these modes
 (dolist (hook '(lisp-mode-hook
                 common-lisp-mode-hook
