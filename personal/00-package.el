@@ -2,31 +2,41 @@
 
 ;; packages
 (setq prelude-packages (append '(
-                                 ansible-vault
-                                 auto-complete
-                                 buffer-move
-                                 diminish
+                                 ;; ui
+                                 company               ; completion framework
+                                 fill-column-indicator ; draws a line at X column
+                                 helm                  ; interactive completion for emacs commands
+                                 helm-projectile       ; helm integration to projectile
+                                 rainbow-delimiters    ; collors [non]matching braces
+                                 sr-speedbar
+                                 buffer-move           ; moves buffers around with mod+arrow key
+
+                                 ;; go
+                                 go-guru
+                                 company-go
+
+                                 ;; python
                                  elpy
+                                 flymake-python-pyflakes
+
+                                 ;; helpers
+                                 ggtags
+                                 rainbow-mode
+
+                                 ;; other major modes
+                                 ansible-vault
+                                 markdown-mode
+                                 ssh-config-mode
+                                 json-mode
+                                 nginx-mode
+                                 restclient
+
+                                 ;; minor modes
+                                 diminish
                                  evil-numbers
-                                 fill-column-indicator
                                  flx-ido
                                  flymake-cursor
-                                 flymake-python-pyflakes
-                                 ggtags
-                                 go-guru
-                                 helm
-                                 helm-projectile
-                                 json-mode
-                                 linum-off
-                                 markdown-mode
-                                 nginx-mode
-                                 rainbow-delimiters
-                                 rainbow-mode
-                                 restclient
                                  simpleclip
-                                 smex
-                                 sr-speedbar
-                                 ssh-config-mode
                                  yasnippet
                                  )
                                prelude-packages))
