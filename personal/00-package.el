@@ -33,6 +33,7 @@
 
                                  ;; minor modes
                                  diminish
+                                 direnv
                                  evil-numbers
                                  flx-ido
                                  flymake-cursor
