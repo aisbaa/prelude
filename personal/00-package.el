@@ -37,6 +37,7 @@
                                  evil-numbers
                                  flx-ido
                                  flycheck
+                                 multiple-cursors
                                  simpleclip
                                  yasnippet
                                  )
