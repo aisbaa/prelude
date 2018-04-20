@@ -17,4 +17,8 @@
                           ;; completion
                           (require 'company-go)
                           (set (make-local-variable 'company-backends) '(company-go))
+
+                          ;; linters
+                          (require 'flycheck)
+                          (flycheck-mode t)
                           ))
