@@ -3,6 +3,7 @@
                           (setq-local indent-tabs-mode t)
                           (setq-local whitespace-style
                                       '(face trailing lines-tail empty indentation space-after-tab space-before-tab))
+                          (setq-local whitespace-line-column 100)
                           (whitespace-mode t)
 
                           ;; helper modes
