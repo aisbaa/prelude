@@ -7,6 +7,7 @@
                           (whitespace-mode t)
 
                           ;; helper modes
+                          (add-hook 'before-save-hook 'gofmt-before-save)
                           (compile-on-save-mode)
                           (flyspell-prog-mode)
                           (rainbow-delimiters-mode t)
