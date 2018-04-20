@@ -9,6 +9,7 @@
 ;;; Code:
 
 (require 'buffer-move)
+(require 'direnv)
 (require 'flyspell)
 (require 'guru-mode)
 (require 'rainbow-mode)
