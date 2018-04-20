@@ -36,7 +36,7 @@
                                  direnv
                                  evil-numbers
                                  flx-ido
-                                 flymake-cursor
+                                 flycheck
                                  simpleclip
                                  yasnippet
                                  )
