@@ -12,7 +12,9 @@
                           (flyspell-prog-mode)
                           (rainbow-delimiters-mode t)
 
+                          (require 'go-guru)
+
                           ;; completion
                           (require 'company-go)
-                          (require 'go-guru)
+                          (set (make-local-variable 'company-backends) '(company-go))
                           ))
