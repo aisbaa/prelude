@@ -18,7 +18,8 @@
 
                                  ;; python
                                  elpy
-                                 flymake-python-pyflakes
+                                 flycheck-pycheckers
+                                 flycheck-pyflakes
 
                                  ;; helpers
                                  ggtags

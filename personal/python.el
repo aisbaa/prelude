@@ -3,6 +3,8 @@
 
 (add-hook 'python-mode-hook (lambda ()
                               ;; linters
+                              (require 'flycheck-pycheckers)
+                              (require 'flycheck-pyflakes)
                               (require 'flycheck)
                               (flycheck-mode t)
 
