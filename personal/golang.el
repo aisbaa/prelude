@@ -11,6 +11,7 @@
                           (compile-on-save-mode)
                           (flyspell-prog-mode)
                           (rainbow-delimiters-mode t)
+                          (turn-on-fci-mode)
 
                           (require 'go-guru)
 
