@@ -1,22 +1,18 @@
 (require 'flymake-python-pyflakes)
 
-(add-hook 'python-mode-hook
-          (lambda ()
-            (flymake-python-pyflakes-load)
-            (auto-complete-mode t)
-            (whitespace-mode t)
-            (compile-on-save-mode)
-            (flyspell-prog-mode)
-            (rainbow-delimiters-mode t)
-            (turn-on-fci-mode)
-            ))
 
+(add-hook 'python-mode-hook (lambda ()
+                              ;; linters
+                              (require 'flycheck)
+                              (flycheck-mode t)
 
-(setq flymake-python-pyflakes-executable "flake8")
+                              ;; completion
+                              (require 'company-go)
 
-(add-hook 'compilation-mode-hook
-          (lambda ()
-            (highlight-regexp "ERROR" 'hi-red-b)
-            (highlight-regexp "FAILED" 'hi-red-b)
-            (highlight-regexp "PASSED" 'hi-green-b)
-            (highlight-regexp "Assertion Failed:" 'hi-pink)))
+                              ;; helpers
+                              (compile-on-save-mode)
+                              (flyspell-prog-mode)
+                              (rainbow-delimiters-mode t)
+                              (turn-on-fci-mode)
+                              (whitespace-mode t)
+                              ))
