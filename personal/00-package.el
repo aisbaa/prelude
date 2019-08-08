@@ -16,6 +16,9 @@
                                  go-guru
                                  company-go
 
+                                 ;; php
+                                 php-mode
+
                                  ;; python
                                  elpy
                                  flycheck-pycheckers
