@@ -8,16 +8,21 @@
                                  helm                  ; interactive completion for emacs commands
                                  helm-projectile       ; helm integration to projectile
                                  rainbow-delimiters    ; collors [non]matching braces
-                                 sr-speedbar
+                                 sr-speedbar           ; TODO(Aistis): replace this with treemacs
                                  buffer-move           ; moves buffers around with mod+arrow key
                                  nord-theme            ; nice blueish theme
 
+                                 ;; lsp
+                                 ;; lsp-mode
+                                 ;; lsp-ui
+                                 ;; company-lsp
+
                                  ;; go
-                                 go-guru
-                                 company-go
+                                 ;; go-guru
+                                 ;; company-go
 
                                  ;; php
-                                 php-mode
+                                 ;; php-mode
 
                                  ;; python
                                  elpy
@@ -25,18 +30,20 @@
                                  flycheck-pyflakes
 
                                  ;; helpers
-                                 ggtags
-                                 rainbow-mode
+                                 ;; ggtags
+                                 use-package
 
                                  ;; other major modes
-                                 ansible-vault
                                  markdown-mode
                                  ssh-config-mode
                                  json-mode
                                  nginx-mode
+
+                                 ;; http client
                                  restclient
 
                                  ;; minor modes
+                                 rainbow-mode
                                  diminish
                                  direnv
                                  evil-numbers
