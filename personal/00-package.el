@@ -10,6 +10,7 @@
                                  rainbow-delimiters    ; collors [non]matching braces
                                  sr-speedbar
                                  buffer-move           ; moves buffers around with mod+arrow key
+                                 nord-theme            ; nice blueish theme
 
                                  ;; go
                                  go-guru
