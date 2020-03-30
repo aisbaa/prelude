@@ -15,8 +15,8 @@
                                  nord-theme            ; nice blueish theme
 
                                  ;; lsp
-                                 ;; lsp-mode
-                                 ;; lsp-ui
+                                 lsp-mode
+                                 lsp-ui
                                  ;; company-lsp
 
                                  ;; go
