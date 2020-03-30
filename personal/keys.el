@@ -38,7 +38,7 @@
 
 
 ;;; recompile
-(global-set-key (kbd "C-c C-r") 'recompile)
+(global-set-key (kbd "C-x C-r") 'recompile)
 
 
 ;;; replace string functionality
