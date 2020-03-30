@@ -23,6 +23,9 @@
                                  ;; go-guru
                                  ;; company-go
 
+                                 ;; lua
+                                 lua-mode
+
                                  ;; php
                                  ;; php-mode
 
