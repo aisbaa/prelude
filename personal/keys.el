@@ -18,10 +18,12 @@
 (helm-mode t)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-M-s") 'helm-occur)
-(global-set-key (kbd "M-.") 'helm-etags-select)
 
 
 (global-set-key (kbd "C-s") 'isearch-forward)
+
+;; xref
+(global-set-key (kbd "M-.") 'xref-find-definitions)
 
 
 ;;; woman
