@@ -8,7 +8,9 @@
                                  helm                  ; interactive completion for emacs commands
                                  helm-projectile       ; helm integration to projectile
                                  rainbow-delimiters    ; collors [non]matching braces
-                                 sr-speedbar           ; TODO(Aistis): replace this with treemacs
+                                 ;; sr-speedbar           ; TODO(Aistis): replace this with treemacs
+                                 ;; projectile-speedbar
+                                 treemacs-projectile
                                  buffer-move           ; moves buffers around with mod+arrow key
                                  nord-theme            ; nice blueish theme
 
