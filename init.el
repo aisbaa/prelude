@@ -97,6 +97,10 @@ by Prelude.")
 ;; warn when opening files bigger than 100MB
 (setq large-file-warning-threshold 100000000)
 
+
+;; Aistis changes
+(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
+
 ;; preload the personal settings from `prelude-personal-preload-dir'
 (when (file-exists-p prelude-personal-preload-dir)
   (message "Loading personal configuration files in %s..." prelude-personal-preload-dir)
