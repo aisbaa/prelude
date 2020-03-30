@@ -28,6 +28,13 @@
 ;; pp
 (global-set-key (kbd "C-x C-e") 'pp-eval-last-sexp)
 
+;; multicursor
+(require 'multiple-cursors)
+
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
 ;;; woman
 (global-set-key (kbd "<f1>") 'woman)
 
