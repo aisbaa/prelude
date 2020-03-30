@@ -25,6 +25,8 @@
 ;; xref
 (global-set-key (kbd "M-.") 'xref-find-definitions)
 
+;; pp
+(global-set-key (kbd "C-x C-e") 'pp-eval-last-sexp)
 
 ;;; woman
 (global-set-key (kbd "<f1>") 'woman)
