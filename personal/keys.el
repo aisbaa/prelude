@@ -53,7 +53,7 @@
 
 
 ;;; yas-snippet
-(global-set-key (kbd "C-<tab>") 'yas-expand)
+(global-set-key (kbd "C-<tab>") 'treemacs)
 
 
 ;; moves buffers around
