@@ -6,7 +6,6 @@
 
 (global-set-key (kbd "C-x t ") 'aisbaa-insert-time)
 
-
 ;; opening files
 (require 'ido)
 (ido-mode t)

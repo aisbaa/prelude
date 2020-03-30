@@ -12,7 +12,6 @@
                                  ;; projectile-speedbar
                                  treemacs-projectile
                                  buffer-move           ; moves buffers around with mod+arrow key
-                                 nord-theme            ; nice blueish theme
 
                                  ;; lsp
                                  lsp-mode
