@@ -32,12 +32,6 @@
 (scroll-bar-mode -1)
 
 
-;;; speed bar
-(require 'sr-speedbar)
-
-(custom-set-variables
- '(speedbar-show-unknown-files t))
-
 ;;; enabling linum-mode for these modes
 (dolist (hook '(lisp-mode-hook
                 common-lisp-mode-hook
