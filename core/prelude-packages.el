@@ -1,6 +1,6 @@
 ;;; prelude-packages.el --- Emacs Prelude: default package selection.
 ;;
-;; Copyright © 2011-2017 Bozhidar Batsov
+;; Copyright © 2011-2020 Bozhidar Batsov
 ;;
 ;; Author: Bozhidar Batsov <bozhidar@batsov.com>
 ;; URL: https://github.com/bbatsov/prelude
@@ -32,7 +32,7 @@
 ;; Boston, MA 02110-1301, USA.
 
 ;;; Code:
-(require 'cl)
+(require 'cl-lib)
 (require 'package)
 
 ;; accessing a package repo over https on Windows is a no go, so we
@@ -59,7 +59,6 @@
     beacon
     browse-kill-ring
     crux
-    dash
     discover-my-major
     diff-hl
     diminish
@@ -72,18 +71,16 @@
     git-timemachine
     gitconfig-mode
     gitignore-mode
-    god-mode
-    grizzl
     guru-mode
+    hl-todo
     imenu-anywhere
-    ov
     projectile
     magit
     move-text
     operate-on-number
-    smart-mode-line
     smartparens
     smartrep
+    super-save
     undo-tree
     volatile-highlights
     which-key
@@ -93,7 +90,7 @@
 
 (defun prelude-packages-installed-p ()
   "Check if all packages in `prelude-packages' are installed."
-  (every #'package-installed-p prelude-packages))
+  (cl-every #'package-installed-p prelude-packages))
 
 (defun prelude-require-package (package)
   "Install PACKAGE unless already installed."
@@ -130,7 +127,7 @@ are installed and are not in `prelude-packages'.  Useful for
 removing unwanted packages."
   (interactive)
   (package-show-package-list
-   (set-difference package-activated-list prelude-packages)))
+   (cl-set-difference package-activated-list prelude-packages)))
 
 (defmacro prelude-auto-install (extension package mode)
   "When file with EXTENSION is opened triggers auto-install of PACKAGE.
@@ -158,6 +155,7 @@ PACKAGE is installed only if not already present.  The file is opened in MODE."
     ("\\.erl\\'" erlang erlang-mode)
     ("\\.feature\\'" feature-mode feature-mode)
     ("\\.go\\'" go-mode go-mode)
+    ("\\.graphql\\'" graphql-mode graphql-mode)
     ("\\.groovy\\'" groovy-mode groovy-mode)
     ("\\.haml\\'" haml-mode haml-mode)
     ("\\.hs\\'" haskell-mode haskell-mode)

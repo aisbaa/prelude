@@ -1,6 +1,6 @@
 ;;; prelude-latex.el --- Emacs Prelude: Sane setup for LaTeX writers.
 ;;
-;; Copyright © 2011-2017 Bozhidar Batsov
+;; Copyright © 2011-2020 Bozhidar Batsov
 ;;
 ;; Author: Bozhidar Batsov <bozhidar@batsov.com>
 ;; URL: https://github.com/bbatsov/prelude
@@ -35,12 +35,11 @@
 (prelude-require-packages '(auctex cdlatex))
 (require 'smartparens-latex)
 ;; for case
-(require 'cl)
+(require 'cl-lib)
 
-(eval-after-load "company"
-  '(progn
-     (prelude-require-packages '(company-auctex))
-     (company-auctex-init)))
+(with-eval-after-load "company"
+  (prelude-require-packages '(company-auctex))
+  (company-auctex-init))
 
 (defcustom prelude-latex-fast-math-entry 'LaTeX-math-mode
   "Method used for fast math symbol entry in LaTeX."
@@ -62,7 +61,7 @@
 ;; use pdflatex
 (setq TeX-PDF-mode t)
 
-;; sensible defaults for OS X, other OSes should be covered out-of-the-box
+;; sensible defaults for macOS, other OSes should be covered out-of-the-box
 (when (eq system-type 'darwin)
   (setq TeX-view-program-selection
         '((output-dvi "DVI Viewer")
@@ -79,7 +78,7 @@
   (turn-on-auto-fill)
   (abbrev-mode +1)
   (smartparens-mode +1)
-  (case prelude-latex-fast-math-entry
+  (cl-case prelude-latex-fast-math-entry
     (LaTeX-math-mode (LaTeX-math-mode 1))
     (cdlatex (turn-on-cdlatex))))
 
