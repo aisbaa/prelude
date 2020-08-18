@@ -25,6 +25,9 @@
                                  ;; lua
                                  lua-mode
 
+                                 ;; jsonnet
+                                 jsonnet-mode
+                                 
                                  ;; php
                                  ;; php-mode
 
