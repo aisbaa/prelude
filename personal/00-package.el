@@ -4,14 +4,14 @@
 (setq prelude-packages (append '(
                                  ;; ui
                                  company               ; completion framework
-                                 fill-column-indicator ; draws a line at X column
                                  helm                  ; interactive completion for emacs commands
                                  helm-projectile       ; helm integration to projectile
                                  rainbow-delimiters    ; collors [non]matching braces
-                                 ;; sr-speedbar           ; TODO(Aistis): replace this with treemacs
-                                 ;; projectile-speedbar
-                                 treemacs-projectile
+                                 treemacs-projectile   ; project/file browser
                                  buffer-move           ; moves buffers around with mod+arrow key
+
+                                 ;; kubernetes
+                                 k8s-mode
 
                                  ;; lsp
                                  lsp-mode
@@ -28,9 +28,6 @@
                                  ;; jsonnet
                                  jsonnet-mode
                                  
-                                 ;; php
-                                 ;; php-mode
-
                                  ;; python
                                  elpy
                                  flycheck-pycheckers
