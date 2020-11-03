@@ -53,6 +53,7 @@
 
 ;;; yas-snippet
 (global-set-key (kbd "C-<tab>") 'treemacs)
+(global-set-key (kbd "C-x T") 'treemacs) ; for emacs in iterm
 
 
 ;; moves buffers around
