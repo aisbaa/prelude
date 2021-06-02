@@ -47,6 +47,9 @@
           (lambda ()
             (setq display-buffer-reuse-frames t)))
 
+(require `whitespace-mode)
+(global-whitespace-mode t)
+
 ;;; diminish mode line
 (require 'diminish)
 
