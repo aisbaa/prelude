@@ -27,21 +27,25 @@
 
                                  ;; jsonnet
                                  jsonnet-mode
-                                 
+
                                  ;; python
                                  elpy
                                  flycheck-pycheckers
                                  flycheck-pyflakes
+
+                                 ;; shell
+                                 flymake-shellcheck
 
                                  ;; helpers
                                  ;; ggtags
                                  use-package
 
                                  ;; other major modes
-                                 markdown-mode
-                                 ssh-config-mode
                                  json-mode
+                                 markdown-mode
                                  nginx-mode
+                                 ssh-config-mode
+                                 systemd
 
                                  ;; http client
                                  restclient
