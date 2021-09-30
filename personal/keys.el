@@ -61,3 +61,6 @@
 (global-set-key (kbd "<C-s-down>")   'buf-move-down)
 (global-set-key (kbd "<C-s-left>")   'buf-move-left)
 (global-set-key (kbd "<C-s-right>")  'buf-move-right)
+
+;; zoom window
+(global-set-key (kbd "C-x z") 'zoom-window-zoom)

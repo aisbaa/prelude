@@ -9,6 +9,7 @@
                                  rainbow-delimiters    ; collors [non]matching braces
                                  treemacs-projectile   ; project/file browser
                                  buffer-move           ; moves buffers around with mod+arrow key
+                                 zoom-window           ; similar to zoom in tmux
 
                                  ;; kubernetes
                                  k8s-mode
