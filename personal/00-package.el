@@ -10,6 +10,7 @@
                                  treemacs-projectile   ; project/file browser
                                  buffer-move           ; moves buffers around with mod+arrow key
                                  zoom-window           ; similar to zoom in tmux
+                                 desktop+              ; restore/load previous session
 
                                  ;; kubernetes
                                  k8s-mode
