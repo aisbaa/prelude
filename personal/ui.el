@@ -60,4 +60,3 @@
 
 ;; ;; desktop mode
 ;; (desktop-save-mode 1)
-;; (require 'desktop+)
