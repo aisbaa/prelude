@@ -32,15 +32,6 @@
 (scroll-bar-mode -1)
 
 
-;;; enabling linum-mode for these modes
-(dolist (hook '(lisp-mode-hook
-                common-lisp-mode-hook
-                emacs-lisp-mode-hook
-                lisp-interaction-mode-hook))
-  (add-hook hook (lambda ()
-                   (linum-mode t))))
-
-
 ;;; compilation
 (setq compilation-scroll-output t)
 (add-hook 'compilation-mode-hook

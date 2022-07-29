@@ -17,9 +17,6 @@
             ;; sets column limit to 78th character
             (set-fill-column 78)
 
-            ;; line numbers
-            (linum-mode t)
-
             ;; whitespace-mode
             (whitespace-mode t)
 
