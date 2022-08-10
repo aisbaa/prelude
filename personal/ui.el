@@ -58,6 +58,6 @@
 (diminish 'whitespace-mode " ●")
 (diminish 'yas-minor-mode " γ")
 
-;; desktop mode
-(desktop-save-mode 1)
-(require 'desktop+)
+;; ;; desktop mode
+;; (desktop-save-mode 1)
+;; (require 'desktop+)
