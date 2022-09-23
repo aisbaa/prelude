@@ -11,6 +11,9 @@
                                  buffer-move           ; moves buffers around with mod+arrow key
                                  zoom-window           ; similar to zoom in tmux
 
+                                 ;; bazel
+                                 bazel
+
                                  ;; kubernetes
                                  k8s-mode
 
