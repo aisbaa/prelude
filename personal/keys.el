@@ -64,3 +64,6 @@
 
 ;; zoom window
 (global-set-key (kbd "C-x z") 'zoom-window-zoom)
+
+;; edit multiple selected lies
+(global-set-key (kbd "C-c m c") 'mc/edit-lines)
