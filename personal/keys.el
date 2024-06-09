@@ -67,3 +67,7 @@
 
 ;; edit multiple selected lies
 (global-set-key (kbd "C-c m c") 'mc/edit-lines)
+
+;; folding
+(require 'origami)
+(global-set-key (kbd "C-c C-c")  'origami-toggle-node)

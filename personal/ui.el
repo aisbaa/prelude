@@ -60,3 +60,6 @@
 
 ;; ;; desktop mode
 ;; (desktop-save-mode 1)
+
+;; yaml
+(add-hook 'yaml-mode-hook 'origami-mode)
