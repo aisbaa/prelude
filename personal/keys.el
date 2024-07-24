@@ -71,3 +71,6 @@
 ;; folding
 (require 'origami)
 (global-set-key (kbd "C-c C-c")  'origami-toggle-node)
+
+;; goto line global
+(global-set-key (kbd "M-g M-g")  'goto-line)
